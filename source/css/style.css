@@ -456,6 +456,7 @@ textarea {
 }
 .screen {
   color: #ffffff;
+  background-color: #0c2a2e;
 }
 .first-screen {
   background: url('../img/first-screen.png') no-repeat;
