@@ -3,53 +3,64 @@
     background-color: rgb(12,42,46);
 }
 
+#pagepiling {
+    background-color: rgb(12,42,46);
+}
+
 .first-screen {
     background: url('../img/first-screen.png') no-repeat;
     width: 100vw;
     height: 100vh;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
+    background-size: cover;
 }
 
 .second-screen {
     background: url('../img/second-screen.png') no-repeat;
     width: 100vw;
     height: 100vh;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
+    background-size: cover;
 }
 
 .third-screen {
     background: url('../img/third-screen.png') no-repeat;
     width: 100vw;
     height: 100vh;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
+    background-size: cover;
 }
 
 .fourth-screen {
     background: url('../img/fourth-screen.png') no-repeat;
     width: 100vw;
     height: 100vh;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
+    background-size: cover;
 }
 
 .fifth-screen {
     background: url('../img/five-screen.png') no-repeat;
     width: 100vw;
     height: 100vh;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
+    background-size: cover;
 }
 
 .sixth-screen {
     background: url('../img/six-screen.png') no-repeat;
     width: 100vw;
     height: 100vh;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
+    background-size: cover;
 }
 
 .seventh-screen {
     background: url('../img/seven-screen.png') no-repeat;
     width: 100vw;
     height: 100vh;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
+    background-size: cover;
 }
 
 .slick-vertical .slick-slide {
@@ -76,7 +87,11 @@
     width: 81.5%;
 }
 
-.third-screen .screen__title {
+.third-screen .screen__title,
+.fourth-screen .screen__title,
+.fifth-screen .screen__title,
+.sixth-screen .screen__title,
+.seventh-screen .screen__title  {
     letter-spacing: 2.1px;
 }
 
@@ -90,7 +105,7 @@
     display: block;
     line-height: 52px;
     letter-spacing: 1.2px;
-    margin-bottom: 49px;
+    margin-bottom: 25px;
 }
 
 .screen__subtitle {
@@ -111,9 +126,9 @@
     line-height: 27px;
 }
 
-// .screen-slider.slick-slide {
-//     height: 250px !important;
-// }
+.screen-slider .slick-list.draggable {
+    height: 250px !important;
+}
 
 .screen-slider__slide-text {
     margin: 45px 101px 10px 44px;

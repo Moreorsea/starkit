@@ -19,3 +19,7 @@ $('.screen-slider').slick({
     slidesToScroll: 1
 });
 
+// $('.screen-slider').owlCarousel({
+//     loop:true,
+//     nav:true
+// })
