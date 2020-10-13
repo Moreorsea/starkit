@@ -481,6 +481,24 @@ textarea {
   height: 100vh;
   background-size: 100% 100%;
 }
+.fifth-screen {
+  background: url('../img/five-screen.png') no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+}
+.sixth-screen {
+  background: url('../img/six-screen.png') no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+}
+.seventh-screen {
+  background: url('../img/seven-screen.png') no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+}
 .slick-vertical .slick-slide {
   height: 100vh !important;
 }
@@ -497,8 +515,12 @@ textarea {
   font-size: 80px;
   line-height: 95px;
   color: #ffffff;
-  margin: 294px 0 0 147px;
+  margin: 294px auto 0;
   text-transform: uppercase;
+  width: 81.5%;
+}
+.third-screen .screen__title {
+  letter-spacing: 2.1px;
 }
 .screen__title .screen__title--yellow {
   color: #ffc84b;
@@ -506,6 +528,10 @@ textarea {
 .screen__title .screen__title--small {
   font-family: "Muller Medium";
   font-size: 40px;
+  display: block;
+  line-height: 52px;
+  letter-spacing: 1.2px;
+  margin-bottom: 49px;
 }
 .screen__subtitle {
   font-family: "Roboto Regular";
@@ -521,9 +547,15 @@ textarea {
   margin: 45px 0 0 194px;
 }
 .screen-slider.slick-slider {
-  width: 300px;
-  height: 200px;
+  width: 440px;
+  height: 250px;
   left: 150px;
+  font-family: "Roboto Regular";
+  font-size: 18px;
+  line-height: 27px;
+}
+.screen-slider__slide-text {
+  margin: 45px 101px 10px 44px;
 }
 .screen-slider .slick-prev.slick-arrow {
   border: none;
@@ -532,6 +564,9 @@ textarea {
   height: 30px;
   background: url("../img/arrow-active.png") no-repeat;
   color: transparent;
+  position: absolute;
+  bottom: 26px;
+  left: 32px;
 }
 .screen-slider .slick-prev.slick-arrow:hover {
   background: url("../img/hover-arrow.png") no-repeat;
@@ -540,7 +575,8 @@ textarea {
 }
 .screen-slider .slick-next.slick-arrow {
   position: absolute;
-  bottom: 37px;
+  bottom: 26px;
+  left: 77px;
   border: none;
   outline: none;
   width: 40px;
@@ -564,6 +600,24 @@ textarea {
   background: url("../img/arrow-disabled.png") no-repeat;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+}
+.slick-slide.screen-slider__slide:first-child {
+  background: url("../img/first-small-screen.png") no-repeat;
+  width: 440px;
+  height: 250px !important;
+  background-size: contain;
+}
+.slick-slide.screen-slider__slide:nth-child(2) {
+  background: url("../img/second-small-screen.png") no-repeat;
+  width: 440px;
+  height: 250px !important;
+  background-size: contain;
+}
+.slick-slide.screen-slider__slide:nth-child(3) {
+  background: url("../img/third-small-screen.png") no-repeat;
+  width: 440px;
+  height: 250px !important;
+  background-size: contain;
 }
 .advantages {
   margin-left: 192px;

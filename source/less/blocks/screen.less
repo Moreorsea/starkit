@@ -30,6 +30,27 @@
     background-size: 100% 100%;
 }
 
+.fifth-screen {
+    background: url('../img/five-screen.png') no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.sixth-screen {
+    background: url('../img/six-screen.png') no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.seventh-screen {
+    background: url('../img/seven-screen.png') no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
 .slick-vertical .slick-slide {
     height: 100vh !important;
 }
@@ -49,8 +70,13 @@
     font-size: 80px;
     line-height: 95px;
     color: rgb(255,255,255);
-    margin: 294px 0 0 147px;
+    margin: 294px auto 0;
     text-transform: uppercase;
+    width: 81.5%;
+}
+
+.third-screen .screen__title {
+    letter-spacing: 2.1px;
 }
 
 .screen__title .screen__title--yellow {
@@ -60,6 +86,10 @@
 .screen__title .screen__title--small {
     font-family: "Muller Medium";
     font-size: 40px;
+    display: block;
+    line-height: 52px;
+    letter-spacing: 1.2px;
+    margin-bottom: 49px;
 }
 
 .screen__subtitle {
@@ -72,9 +102,20 @@
 }
 
 .screen-slider.slick-slider {
-    width: 300px;
-    height: 200px;
+    width: 440px;
+    height: 250px;
     left: 150px;
+    font-family: "Roboto Regular";
+    font-size: 18px;
+    line-height: 27px;
+}
+
+// .screen-slider.slick-slide {
+//     height: 250px !important;
+// }
+
+.screen-slider__slide-text {
+    margin: 45px 101px 10px 44px;
 }
 
 .screen-slider .slick-prev.slick-arrow {
@@ -84,6 +125,9 @@
     height: 30px;
     background: url("../img/arrow-active.png") no-repeat;
     color: transparent;
+    position: absolute;
+    bottom: 26px;
+    left: 32px;
 }
 
 .screen-slider .slick-prev.slick-arrow:hover {
@@ -93,7 +137,8 @@
 
 .screen-slider .slick-next.slick-arrow {
     position: absolute;
-    bottom: 37px;
+    bottom: 26px;
+    left: 77px;
     border: none;
     outline: none;
     width: 40px;
@@ -118,3 +163,24 @@
     transform: rotate(0deg);
 }
 
+//стили для слайдера внутри слайда
+.slick-slide.screen-slider__slide:first-child {
+    background: url("../img/first-small-screen.png") no-repeat;
+    width: 440px;
+    height: 250px !important;
+    background-size: contain;
+}
+
+.slick-slide.screen-slider__slide:nth-child(2) {
+    background: url("../img/second-small-screen.png") no-repeat;
+    width: 440px;
+    height: 250px !important;
+    background-size: contain;
+}
+
+.slick-slide.screen-slider__slide:nth-child(3) {
+    background: url("../img/third-small-screen.png") no-repeat;
+    width: 440px;
+    height: 250px !important;
+    background-size: contain;
+}
