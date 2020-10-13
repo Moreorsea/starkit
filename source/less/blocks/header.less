@@ -1,17 +1,39 @@
 .main-header {
     width: 100%;
     position: fixed;
-    height: 80px;
-    display: flex;
+    height: 134px;
     top: 0px;
     left: 0px;
     z-index: 100;
 }
 
+.main-header__wrapper {
+    display: flex;
+    height: 100%;
+    width: 81%;
+    margin: 0 auto;
+}
+
 .main-header__logo {
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 58px;
     display: block;
     background: url("../img/logo.png") no-repeat;
     background-size: contain;
+    margin: 42px 22.5% 0 0;
+}
+
+.main-header-menu {
+    margin-top: 78px;
+}
+
+.main-header-menu__item {
+    font-family: "Muller Medium";
+    color: rgb(255,255,255);
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin-right: 51px;
+    letter-spacing: 1px;
 }

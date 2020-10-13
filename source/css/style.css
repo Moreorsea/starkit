@@ -420,20 +420,39 @@ textarea {
 .main-header {
   width: 100%;
   position: fixed;
-  height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 134px;
   top: 0px;
   left: 0px;
   z-index: 100;
 }
+.main-header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 81%;
+  margin: 0 auto;
+}
 .main-header__logo {
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 58px;
   display: block;
   background: url("../img/logo.png") no-repeat;
   background-size: contain;
+  margin: 42px 22.5% 0 0;
+}
+.main-header-menu {
+  margin-top: 78px;
+}
+.main-header-menu__item {
+  font-family: "Muller Medium";
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 27px;
+  text-transform: uppercase;
+  margin-right: 51px;
+  letter-spacing: 1px;
 }
 .screen {
   color: #ffffff;
@@ -472,8 +491,9 @@ textarea {
 .screen__title {
   font-family: "Muller Black";
   font-size: 80px;
-  line-height: 80px;
+  line-height: 95px;
   color: #ffffff;
+  margin: 294px 0 51px 147px;
   text-transform: uppercase;
 }
 .screen__title .screen__title--yellow {
@@ -494,6 +514,7 @@ textarea {
           flex-direction: column;
   font-size: 22px;
   line-height: 33px;
+  margin-left: 194px;
 }
 .screen-slider.slick-slider {
   width: 300px;
@@ -541,9 +562,19 @@ textarea {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
+.advantages {
+  margin-left: 192px;
+  margin: 63px 0 0 194px;
+}
 .advantages__subtitle {
   color: #ffc84b;
   font-family: "Muller Medium";
+  font-size: 12px;
+  line-height: 34px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 37px;
 }
 .advantages-list {
   list-style: none;
@@ -557,8 +588,9 @@ textarea {
 .advantages-list__item {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  width: 260px;
+  width: 290px;
   margin-right: 50px;
+  letter-spacing: 0.6px;
 }
 .games-list__item-icon--dragon {
   width: 48px;
