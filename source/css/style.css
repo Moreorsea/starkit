@@ -597,6 +597,8 @@ textarea {
   font-size: 22px;
   line-height: 33px;
   margin: 52px 0 0 194px;
+  width: 76%;
+  margin: 3.3% auto 0;
 }
 .screen-slider {
   width: 34%;
@@ -692,8 +694,8 @@ textarea {
   background-size: 100% 100%;
 }
 .advantages {
-  margin-left: 192px;
-  margin: 63px 0 0 194px;
+  width: 76%;
+  margin: 4% auto 0;
 }
 .advantages__subtitle {
   color: #ffc84b;
