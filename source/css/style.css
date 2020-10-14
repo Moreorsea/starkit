@@ -484,6 +484,20 @@ textarea {
   line-height: 11px;
   padding: 3px 4px;
 }
+.main-copyright {
+  color: #22474c;
+  font-family: "Muller Medium";
+  font-size: 10px;
+  line-height: 24px;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 10;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  top: 759px;
+  letter-spacing: 0.8px;
+  left: 1%;
+}
 .screen {
   color: #ffffff;
   background-color: #0c2a2e;
@@ -582,7 +596,7 @@ textarea {
           flex-direction: column;
   font-size: 22px;
   line-height: 33px;
-  margin: 45px 0 0 194px;
+  margin: 52px 0 0 194px;
 }
 .screen-slider {
   width: 34%;
@@ -663,19 +677,19 @@ textarea {
   background: url("../img/first-small-screen.png") no-repeat;
   width: 100%;
   height: 100%;
-  background-size: contain;
+  background-size: 100% 100%;
 }
 .owl-item:nth-child(2) .screen-slider__slide {
   background: url("../img/second-small-screen.png") no-repeat;
   width: 100%;
   height: 100%;
-  background-size: contain;
+  background-size: 100% 100%;
 }
 .owl-item:nth-child(3) .screen-slider__slide {
   background: url("../img/third-small-screen.png") no-repeat;
   width: 100%;
   height: 100%;
-  background-size: contain;
+  background-size: 100% 100%;
 }
 .advantages {
   margin-left: 192px;
