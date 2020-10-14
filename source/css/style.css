@@ -924,3 +924,23 @@ textarea {
 #pagepiling .slick-dots li button {
   display: none;
 }
+.screen {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+}
+.first-screen-vacancy {
+  background: url('../img/first-vacancy-screen.png') no-repeat;
+}
+.second-screen-vacancy {
+  background: url('../img/second-vacancy-screen.png') no-repeat;
+}
+.third-screen-vacancy {
+  background: url('../img/third-vacancy-screen.png') no-repeat;
+}
+.fourth-screen-vacancy {
+  background: url('../img/fourth-vacancy-screen.png') no-repeat;
+}
+.fifth-screen-vacancy {
+  background: url('../img/fifth-vacancy-screen.png') no-repeat;
+}
