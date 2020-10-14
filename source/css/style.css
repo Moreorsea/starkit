@@ -567,7 +567,7 @@ textarea {
   text-transform: uppercase;
   width: 81.5%;
 }
-@media (min-width: 1024px) and (max-width: 1600px) {
+@media (min-width: 1024px) and (max-width: 1599px) {
   .screen__title {
     font-size: 60px;
     line-height: 75px;
@@ -650,7 +650,7 @@ textarea {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   bottom: 11%;
-  left: 7%;
+  left: 7.2%;
 }
 .screen-slider .owl-next {
   border: none;
@@ -669,7 +669,7 @@ textarea {
   background: url("../img/hover-arrow.png") no-repeat;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  bottom: 7%;
+  bottom: 7.2%;
   left: 19%;
 }
 .screen-slider .owl-prev.disabled {
@@ -684,6 +684,8 @@ textarea {
   background: url("../img/arrow-disabled.png") no-repeat;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+  left: 19%;
+  bottom: 7.2%;
 }
 .owl-item:first-child .screen-slider__slide {
   background: url("../img/first-small-screen.png") no-repeat;
@@ -732,6 +734,16 @@ textarea {
   width: 290px;
   margin-right: 50px;
   letter-spacing: 0.6px;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .advantages-list__item {
+    font-size: 14px;
+    line-height: 20px;
+    width: 270px;
+    margin-right: 30px;
+  }
 }
 .about-games {
   width: 81%;
@@ -766,7 +778,7 @@ textarea {
   font-family: "Roboto Regular";
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 78px;
+  margin-bottom: 6%;
 }
 .games-list__item {
   display: -webkit-box;
@@ -789,6 +801,7 @@ textarea {
   width: 583px;
   font-size: 16px;
   line-height: 24px;
+  font-family: "Roboto Regular";
 }
 .experience {
   width: 76%;
@@ -898,10 +911,12 @@ textarea {
 #pagepiling .slick-dots li {
   background-color: #496569;
   width: 20px;
-  height: 3px;
+  height: 2px;
   border-radius: 10px;
   margin-bottom: 7.5px;
   color: transparent;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 #pagepiling .slick-dots li.slick-active {
   width: 30px;
