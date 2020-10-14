@@ -11,6 +11,10 @@
     background-size: cover;
 }
 
+@media(min-width: 1920px) {
+    background: url('../img/back.png') no-repeat;
+}
+
 .second-screen {
     background: url('../img/second-screen.png') no-repeat;
     width: 100vw;
@@ -81,6 +85,14 @@
     margin: 18% auto 0;
     text-transform: uppercase;
     width: 81.5%;
+}
+
+@media(min-width: 1024px) and (max-width: 1600px) {
+    .screen__title {
+        font-size: 60px;
+        line-height: 75px;
+        margin-top: 15%;
+    }
 }
 
 .third-screen .screen__title,
