@@ -17,6 +17,10 @@
     position: relative;
     -ms-touch-action: pan-Y;
     touch-action: manipulation;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 250px;
     -moz-backface-visibility: hidden;
     /* fix firefox animation glitch */ }
   .owl-carousel .owl-stage:after {
@@ -29,6 +33,7 @@
   .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
+    height: 250px;
     /* fix for flashing background */
     -webkit-transform: translate3d(0px, 0px, 0px); }
   .owl-carousel .owl-wrapper,

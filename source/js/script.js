@@ -11,18 +11,21 @@
 //     verticalSwiping: true
 // });
 
-$('.screen-slider').slick({
-    arrows: true,
-    dots: false,
-    swipe: true,
-    infinite: false,
-    slidesToScroll: 1
-});
+// $('.screen-slider').slick({
+//     arrows: true,
+//     dots: false,
+//     swipe: true,
+//     infinite: false,
+//     slidesToScroll: 1
+// });
 
-// $('.screen-slider').owlCarousel({
-//     loop:true,
-//     nav:true
-// })
+$('.screen-slider').owlCarousel({
+    loop:false,
+    nav:true,
+    items: 1,
+    dots: false,
+    margin: 5
+})
 
 const $slider = $("#pagepiling");
 $slider

@@ -438,6 +438,7 @@ textarea {
   line-height: 27px;
   text-transform: uppercase;
   margin: 78px 0 0 auto;
+  cursor: pointer;
 }
 .main-header__wrapper {
   display: -webkit-box;
@@ -567,6 +568,9 @@ textarea {
   letter-spacing: 1.2px;
   margin-bottom: 25px;
 }
+.third-screen .screen__title .screen__title--small {
+  margin-bottom: 51px;
+}
 .screen__subtitle {
   font-family: "Roboto Regular";
   display: -webkit-box;
@@ -580,21 +584,31 @@ textarea {
   line-height: 33px;
   margin: 45px 0 0 194px;
 }
-.screen-slider.slick-slider {
-  width: 440px;
+.screen-slider {
+  width: 34%;
   height: 250px;
-  left: 150px;
   font-family: "Roboto Regular";
   font-size: 18px;
   line-height: 27px;
+  position: relative;
 }
-.screen-slider .slick-list.draggable {
-  height: 250px !important;
+.third-screen__wrapper {
+  width: 81%;
+  margin: 0 auto;
 }
 .screen-slider__slide-text {
-  margin: 45px 101px 10px 44px;
+  padding: 51px 101px 10px 44px;
 }
-.screen-slider .slick-prev.slick-arrow {
+.owl-stage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 250px;
+}
+.owl-stage-outer {
+  overflow: hidden;
+}
+.screen-slider .owl-prev {
   border: none;
   outline: none;
   width: 40px;
@@ -602,18 +616,17 @@ textarea {
   background: url("../img/arrow-active.png") no-repeat;
   color: transparent;
   position: absolute;
-  bottom: 26px;
-  left: 32px;
+  bottom: 7%;
+  left: 9%;
 }
-.screen-slider .slick-prev.slick-arrow:hover {
+.screen-slider .owl-prev:hover {
   background: url("../img/hover-arrow.png") no-repeat;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  bottom: 11%;
+  left: 7%;
 }
-.screen-slider .slick-next.slick-arrow {
-  position: absolute;
-  bottom: 26px;
-  left: 77px;
+.screen-slider .owl-next {
   border: none;
   outline: none;
   width: 40px;
@@ -622,38 +635,46 @@ textarea {
   color: transparent;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  position: absolute;
+  bottom: 11%;
+  left: 17%;
 }
-.screen-slider .slick-next.slick-arrow:hover {
+.screen-slider .owl-next:hover {
   background: url("../img/hover-arrow.png") no-repeat;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+  bottom: 7%;
+  left: 19%;
 }
-.screen-slider .slick-arrow.slick-prev.slick-disabled {
+.screen-slider .owl-prev.disabled {
   background: url("../img/arrow-disabled.png") no-repeat;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  position: absolute;
+  bottom: 11%;
+  left: 7%;
 }
-.screen-slider .slick-arrow.slick-next.slick-disabled {
+.screen-slider .owl-next.disabled {
   background: url("../img/arrow-disabled.png") no-repeat;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
-.slick-slide.screen-slider__slide:first-child {
+.owl-item:first-child .screen-slider__slide {
   background: url("../img/first-small-screen.png") no-repeat;
-  width: 440px;
-  height: 250px !important;
+  width: 100%;
+  height: 100%;
   background-size: contain;
 }
-.slick-slide.screen-slider__slide:nth-child(2) {
+.owl-item:nth-child(2) .screen-slider__slide {
   background: url("../img/second-small-screen.png") no-repeat;
-  width: 440px;
-  height: 250px !important;
+  width: 100%;
+  height: 100%;
   background-size: contain;
 }
-.slick-slide.screen-slider__slide:nth-child(3) {
+.owl-item:nth-child(3) .screen-slider__slide {
   background: url("../img/third-small-screen.png") no-repeat;
-  width: 440px;
-  height: 250px !important;
+  width: 100%;
+  height: 100%;
   background-size: contain;
 }
 .advantages {
