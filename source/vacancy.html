@@ -78,19 +78,22 @@
     </section>
     <section class="screen sixth-screen-vacancy">
         <div class="screen-wrapper">
-            <h2 class="screen__title">
-                <span class="screen__title--yellow">Отправьте</span>
-                <br>примеры
-                <br>ваших работ
-              </h2>
-              <div class="vacancy-subtitle">
-                <p>А так же можете написать сопроводительное письмо или добавить свое резюме. Мы ознакомимся,
-                    созвонимся с вами и всё обсудим. До встречи!
-                </p>
+            <div class="title-wrapper">
+                <h2 class="screen__title">
+                    <span class="screen__title--yellow">Отправьте</span>
+                    <br>примеры
+                    <br>ваших работ
+                  </h2>
+                  <div class="vacancy-subtitle">
+                    <p>А так же можете написать сопроводительное письмо или добавить свое резюме. Мы ознакомимся,
+                        созвонимся с вами и всё обсудим. До встречи!
+                    </p>
+                </div>
             </div>
-        </div>
+            
+        
         <div class="vacancy-form">
-            <form id="vacancy-form">
+            <form id="vacancy-form" method="POST" action=".">
                 <div class="input-wrapper">
                     <label class="input-wrapper__label" for="name">Ваше имя</label>
                     <input type="text" class="input-wrapper__input" id="name" placeholder="Александр">
@@ -100,12 +103,16 @@
                     <input type="phone" class="input-wrapper__input" id="phone" placeholder="+7 912 345 67 69">
                 </div>
                 <div class="input-wrapper">
-                    <label class="input-wrapper__label" for="file">Прикрепить файл</label>
-                    <input type="file" class="input-wrapper__input" id="file">
+                    <input type="file" class="input-wrapper__input input-wrapper__input--file" id="file">
+                    <label class="input-wrapper__label input-wrapper__label--yellow" for="file">
+                        <div class="add-file-button"></div>
+                        <span>Прикрепить файл</span>
+                    </label>
                 </div>
-                <button type="submit" class="">Отправить работу</button>
+                <button type="submit" class="vacancy-form-submit">Отправить работу</button>
             </form>
         </div>
+    </div>
     </section>
 </main>
 

@@ -948,6 +948,11 @@ textarea {
 .fifth-screen-vacancy {
   background: url('../img/fifth-vacancy-screen.png') no-repeat;
 }
+.screen-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .vacancy-subtitle {
   font-family: "Roboto Regular";
   font-size: 16px;
@@ -971,4 +976,91 @@ textarea {
 }
 .vacancy-text > p {
   width: 463px;
+}
+.vacancy-form {
+  background-color: #0a2427;
+  width: 45.6%;
+  height: 100vh;
+  position: relative;
+  padding-top: 16%;
+}
+.title-wrapper {
+  width: 54.4%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  height: 100vh;
+}
+.title-wrapper .screen__title {
+  margin: 34% 10% 0 18%;
+}
+.title-wrapper .vacancy-subtitle {
+  width: 56%;
+  margin: 5.4% auto 0;
+}
+#vacancy-form {
+  margin: 0 auto;
+  width: 58%;
+  font-family: "Muller Bold";
+  font-size: 14px;
+  line-height: 24px;
+}
+.input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 41px;
+  position: relative;
+}
+.input-wrapper:last-child {
+  margin-bottom: 18px;
+}
+.input-wrapper__label {
+  color: #2a4f54;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  margin-bottom: 9px;
+}
+.input-wrapper__label.input-wrapper__label--yellow {
+  color: #ffc54a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -3px;
+}
+.input-wrapper__input {
+  text-transform: uppercase;
+  color: #d5d5d5;
+  padding: 24px 34px;
+  border: none;
+  outline: none;
+}
+.vacancy-form-submit {
+  border: none;
+  outline: none;
+  background-color: #ffc54a;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 19px 58px;
+  letter-spacing: 1.2px;
+}
+.input-wrapper__input.input-wrapper__input--file {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  padding: 0;
+}
+.add-file-button {
+  width: 13px;
+  height: 13px;
+  background-size: 100% 100%;
+  background: url("../img/add-file.png") no-repeat;
+  margin: 0 17px 0 5px;
 }
