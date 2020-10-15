@@ -777,7 +777,10 @@ textarea {
   font-family: "Roboto Regular";
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 6%;
+  margin-bottom: 5%;
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+  margin-bottom: 3%;
 }
 .games-list__item {
   display: -webkit-box;
