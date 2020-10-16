@@ -73,9 +73,24 @@ if(detailVacancyClose) {
 }
 
 let sendResumeButton = document.querySelector('.vacancy-link--yellow')
+let slickDots = document.querySelector('.slick-dots')
+let lines = slickDots.querySelectorAll('li')
+let slickSlide = document.querySelectorAll('.slick-slide')
+let sendForm = document.querySelector('.sixth-screen-vacancy')
+let coords = Math.floor(sendForm.getBoundingClientRect().top)
+let slickTrack = document.querySelector('.slick-track')
 if(sendResumeButton) {
 	sendResumeButton.addEventListener('click', () => {
 		currentVacancies.classList.remove('show')
+
+		slickTrack.style.transform = `translate3d(0px, -${coords}px, 0px)`
+		for(let i = 0; i < lines.length; i++) {
+			lines[i].classList.remove('slick-active')
+			if(i == 5) {
+				lines[i].classList.add('slick-active')
+			}
+		}
+
 	})
 }
 
