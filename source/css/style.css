@@ -1153,8 +1153,9 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 31px 27px 31px 36px;
-  margin-bottom: 7px;
+  padding: 5% 4% 4.4% 5.1%;
+  margin-bottom: 1%;
+  cursor: pointer;
 }
 .vacancy-list__item-name {
   margin-right: auto;
