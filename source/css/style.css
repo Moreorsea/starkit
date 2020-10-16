@@ -1080,6 +1080,7 @@ textarea {
   background-size: 100% 100%;
   background: url("../img/add-file.png") no-repeat;
   margin: -3px 17px 0 5px;
+  cursor: pointer;
 }
 .current-vacancies {
   position: absolute;
