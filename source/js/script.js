@@ -73,6 +73,18 @@ if(detailVacancyClose) {
 }
 
 let sendResumeButton = document.querySelector('.vacancy-link--yellow')
-sendResumeButton.addEventListener('click', () => {
-	currentVacancies.classList.remove('show')
-})
+if(sendResumeButton) {
+	sendResumeButton.addEventListener('click', () => {
+		currentVacancies.classList.remove('show')
+	})
+}
+
+//уведомление о том, что файл прикреплен
+let fileInput = document.querySelector('.input-wrapper__input--file')
+let inputFileText = document.querySelector('.input-file__text')
+
+if(fileInput) {
+	fileInput.addEventListener('change', () => {
+		inputFileText.innerHTML = 'Прикреплен 1 файл'
+	})
+}
