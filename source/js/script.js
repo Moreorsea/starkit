@@ -33,3 +33,18 @@ function mouseWheelHandler(event) {
 		$slider.slick('slickNext')
 	}
 }
+
+//обработка клика по кнопке "смотреть вакансии"
+let showVacancy = document.querySelectorAll('.vacancy-link')
+let currentVacancies = document.querySelector('.current-vacancies')
+
+for(let i = 0; i < showVacancy.length; i++) {
+	showVacancy[i].addEventListener('click', () => {
+		currentVacancies.classList.add('show')
+	})
+}
+
+let currentVacancyClose = document.querySelector('.current-wrapper__close')
+currentVacancyClose.addEventListener('click', () => {
+	currentVacancies.classList.remove('show')
+})
