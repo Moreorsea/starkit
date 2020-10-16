@@ -18,6 +18,12 @@
     flex-shrink: 0;
     background-color: #ffffff;
     margin-left: auto;
+    transition: 0.3s;
+}
+
+.current-wrapper.inactive {
+    margin-left: 0;
+    transition: 0.3s;
 }
 
 .current-wrapper__current {
@@ -109,6 +115,11 @@
     background-size: 100% 100%;
     margin: 5% 7.2% 0 auto;
     cursor: pointer;
+    opacity: 1;
+}
+
+.current-wrapper.inactive .current-wrapper__close {
+    opacity: 0;
 }
 
 .current-category__arrow {
@@ -117,4 +128,17 @@
     background: url("../img/category-arrow.png");
     background-size: 100% 100%;
     margin-left: auto;
+}
+
+.vacancy-block-disabled {
+    width: 50%;
+    height: 101vh;
+    background-color: rgba(255,255,255,0.7);
+    margin-left: auto;
+    position: absolute;
+    display: none;
+}
+
+.vacancy-block-disabled.active {
+    display: block;
 }
