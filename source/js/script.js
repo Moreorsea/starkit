@@ -45,11 +45,13 @@ for(let i = 0; i < showVacancy.length; i++) {
 }
 
 let currentVacancyClose = document.querySelector('.current-wrapper__close')
-currentVacancyClose.addEventListener('click', () => {
-	currentVacancies.classList.remove('show')
-})
+if(currentVacancyClose) {
+	currentVacancyClose.addEventListener('click', () => {
+		currentVacancies.classList.remove('show')
+	})
+}
 
-let showDetailVacancy = document.querySelectorAll('.vacancy-list__item-arrow')
+let showDetailVacancy = document.querySelectorAll('.vacancy-list__item')
 let vacancyDetail = document.querySelector('.vacancy-detail')
 let currentWrapper = document.querySelector('.current-wrapper')
 let blockDisabled = document.querySelector('.vacancy-block-disabled')
@@ -62,8 +64,15 @@ for(let i = 0; i < showDetailVacancy.length; i++) {
 }
 
 let detailVacancyClose = document.querySelector('.vacancy-detail__close')
-detailVacancyClose.addEventListener('click', () => {
-	currentWrapper.classList.remove('inactive')
-	vacancyDetail.classList.remove('show')
-	blockDisabled.classList.remove('active')
+if(detailVacancyClose) {
+	detailVacancyClose.addEventListener('click', () => {
+		currentWrapper.classList.remove('inactive')
+		vacancyDetail.classList.remove('show')
+		blockDisabled.classList.remove('active')
+	})
+}
+
+let sendResumeButton = document.querySelector('.vacancy-link--yellow')
+sendResumeButton.addEventListener('click', () => {
+	currentVacancies.classList.remove('show')
 })
