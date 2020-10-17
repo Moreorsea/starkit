@@ -1110,6 +1110,10 @@ textarea {
   margin-left: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  position: fixed;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
 }
 .current-wrapper__current {
   font-family: "Muller Extra Bold";
