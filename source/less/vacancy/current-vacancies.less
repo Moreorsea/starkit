@@ -19,8 +19,26 @@
     background-color: #ffffff;
     margin-left: auto;
     transition: 0.3s;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-bottom: 40px;
+    scrollbar-color: #716d6f #EFF0FA; 
+    scrollbar-width: thin;
+}
+
+.current-wrapper::-webkit-scrollbar-track{
+    background-color: #EFF0FA;
+    margin: 20px 30px 10px 10px;
+}
+
+.current-wrapper::-webkit-scrollbar{
+    width: 5px;
+    padding: 13px;
+}
+
+.current-wrapper::-webkit-scrollbar-thumb{
+    background-color:#716d6f6b;
+    background-clip: padding-box;
+    border-right: 4px;
 }
 
 .current-wrapper.inactive {
