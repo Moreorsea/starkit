@@ -9,6 +9,7 @@ $('.screen-slider').owlCarousel({
 })
 
 const $slider = $("#pagepiling");
+let currentVacancies = document.querySelector('.current-vacancies')
 $slider
 	.on('init', () => {
 		mouseWheel($slider)
@@ -22,6 +23,7 @@ $slider
 function mouseWheel($slider) {
 	$(window).on('wheel', { $slider: $slider }, mouseWheelHandler)
 }
+
 function mouseWheelHandler(event) {
 	event.preventDefault()
 	const $slider = event.data.$slider
@@ -36,7 +38,6 @@ function mouseWheelHandler(event) {
 
 //обработка клика по кнопке "смотреть вакансии"
 let showVacancy = document.querySelectorAll('.vacancy-link')
-let currentVacancies = document.querySelector('.current-vacancies')
 
 for(let i = 0; i < showVacancy.length; i++) {
 	showVacancy[i].addEventListener('click', () => {
@@ -60,6 +61,7 @@ for(let i = 0; i < showDetailVacancy.length; i++) {
 		currentWrapper.classList.add('inactive')
 		vacancyDetail.classList.add('show')
 		blockDisabled.classList.add('active')
+		// currentVacancies.style.opacity = '0'
 	})
 }
 
@@ -69,6 +71,7 @@ if(detailVacancyClose) {
 		currentWrapper.classList.remove('inactive')
 		vacancyDetail.classList.remove('show')
 		blockDisabled.classList.remove('active')
+		// currentVacancies.style.opacity = '1'
 	})
 }
 

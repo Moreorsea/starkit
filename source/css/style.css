@@ -1085,7 +1085,7 @@ textarea {
 .current-vacancies {
   position: absolute;
   width: 100vw;
-  height: 101vh;
+  height: 100.2vh;
   top: 0px;
   right: 0px;
   background-color: rgba(7, 11, 12, 0.7);
@@ -1105,6 +1105,8 @@ textarea {
   margin-left: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  overflow-y: scroll;
+  padding-bottom: 40px;
 }
 .current-wrapper.inactive {
   margin-left: 0;
@@ -1229,7 +1231,7 @@ textarea {
   height: 101vh;
   background-color: rgba(255, 255, 255, 0.7);
   margin-left: auto;
-  position: absolute;
+  position: fixed;
   display: none;
 }
 .vacancy-block-disabled.active {
@@ -1295,7 +1297,7 @@ textarea {
   text-align: center;
   text-decoration: none;
   letter-spacing: 1px;
-  margin: 14.2% 0 0 9.2%;
+  margin: 14.2% 0 4% 9.2%;
 }
 @media (min-width: 1024px) and (max-width: 1599px) {
   .vacancy-response--yellow {
