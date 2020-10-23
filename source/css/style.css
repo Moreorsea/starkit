@@ -1260,8 +1260,10 @@ textarea {
   height: 16px;
   background: url('../img/close-vacancy-list.png');
   background-size: 100% 100%;
-  margin: 5% 7.2% 0 auto;
   cursor: pointer;
+  position: fixed;
+  top: 5.7%;
+  right: 7.2%;
 }
 .vacancy-detail__title {
   font-family: "Muller Extra Bold";
@@ -1269,7 +1271,7 @@ textarea {
   letter-spacing: 2.8px;
   font-size: 36px;
   line-height: 36px;
-  margin: 4.8% 0 0 9.2%;
+  margin: 11.8% 0 0 9.2%;
 }
 .vacancy-detail__description {
   font-size: 16px;
