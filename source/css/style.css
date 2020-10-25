@@ -45,6 +45,10 @@ body {
   scrollbar-color: transparent transparent;
   scrollbar-width: thin;
 }
+html {
+  scrollbar-color: transparent transparent;
+  scrollbar-width: none;
+}
 /*stylelint-disable*/
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
