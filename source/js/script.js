@@ -53,25 +53,28 @@ if(currentVacancyClose) {
 }
 
 let showDetailVacancy = document.querySelectorAll('.vacancy-list__item')
-let vacancyDetail = document.querySelector('.vacancy-detail')
+let vacancyDetail = document.querySelectorAll('.vacancy-detail')
 let currentWrapper = document.querySelector('.current-wrapper')
 let blockDisabled = document.querySelector('.vacancy-block-disabled')
 for(let i = 0; i < showDetailVacancy.length; i++) {
 	showDetailVacancy[i].addEventListener('click', () => {
 		currentWrapper.classList.add('inactive')
-		vacancyDetail.classList.add('show')
+		vacancyDetail[i].classList.add('show')
 		blockDisabled.classList.add('active')
 		// currentVacancies.style.opacity = '0'
 	})
 }
 
-let detailVacancyClose = document.querySelector('.vacancy-detail__close')
+let detailVacancyClose = document.querySelectorAll('.vacancy-detail__close')
 if(detailVacancyClose) {
-	detailVacancyClose.addEventListener('click', () => {
-		currentWrapper.classList.remove('inactive')
-		vacancyDetail.classList.remove('show')
-		blockDisabled.classList.remove('active')
-		// currentVacancies.style.opacity = '1'
+	detailVacancyClose.forEach((close) => {
+		close.addEventListener('click', () => {
+			currentWrapper.classList.remove('inactive')
+			vacancyDetail.forEach((detail) => {
+				detail.classList.remove('show')
+			})
+			blockDisabled.classList.remove('active')
+		})
 	})
 }
 
