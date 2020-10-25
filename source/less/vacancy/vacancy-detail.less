@@ -7,6 +7,22 @@
     height: 101vh;
     font-family: "Roboto Regular";
     display: none;
+    overflow-y: auto;
+    scrollbar-color: #716d6f #EFF0FA; 
+    scrollbar-width: thin;
+}
+
+.vacancy-detail::-webkit-scrollbar-track{
+    background-color: #EFF0FA;
+}
+
+.vacancy-detail::-webkit-scrollbar{
+    width: 5px;
+}
+
+.vacancy-detail::-webkit-scrollbar-thumb{
+    background-color:#716d6f6b;
+    background-clip: padding-box;
 }
 
 .vacancy-detail.show {
