@@ -83,7 +83,7 @@ let slickDots = document.querySelector('.slick-dots')
 let lines = slickDots.querySelectorAll('li')
 let slickSlide = document.querySelectorAll('.slick-slide')
 let sendForm = document.querySelector('.sixth-screen-vacancy')
-let coords = Math.floor(sendForm.getBoundingClientRect().top)
+// let coords = Math.floor(sendForm.getBoundingClientRect().top)
 let slickTrack = document.querySelector('.slick-track')
 if(sendResumeButton) {
 	sendResumeButton.addEventListener('click', () => {
@@ -109,3 +109,28 @@ if(fileInput) {
 		inputFileText.innerHTML = 'Прикреплен 1 файл'
 	})
 }
+
+let photoButton = document.querySelector('.button-wrapper__photo')
+let galleryPopup = document.querySelector('.gallery-popup')
+let header = document.querySelector('.main-header__wrapper')
+let popupClose = document.querySelector('.gallery-popup__close')
+
+photoButton.addEventListener('click', () => {
+	galleryPopup.style.display = 'block'
+	header.style.opacity = '0.2'
+	slickDots.style.opacity = '0.2'
+})
+
+popupClose.addEventListener('click', () => {
+	galleryPopup.style.display = 'none'
+	header.style.opacity = '1'
+	slickDots.style.opacity = '1'
+})
+
+$('.gallery').owlCarousel({
+    loop:false,
+    nav:true,
+    items: 1,
+    dots: false,
+    smartSpeed: 600
+})
