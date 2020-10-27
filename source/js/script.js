@@ -134,3 +134,29 @@ $('.gallery').owlCarousel({
     dots: false,
     smartSpeed: 600
 })
+
+//клик по кнопке "посмотреть офис"
+let vacancyOffice = document.querySelector('.vacancy-office')
+let officePopup = document.querySelector('.office-popup')
+let officeClose = document.querySelector('.office-popup__close')
+
+vacancyOffice.addEventListener('click', () => {
+	console.log("клик по кнопке смотреть офис")
+	officePopup.style.display = 'block'
+	header.style.opacity = '0.2'
+	slickDots.style.opacity = '0.2'
+})
+
+officeClose.addEventListener('click', () => {
+	officePopup.style.display = 'none'
+	header.style.opacity = '1'
+	slickDots.style.opacity = '1'
+})
+
+$('.office').owlCarousel({
+    loop:false,
+    nav:true,
+    items: 1,
+    dots: false,
+    smartSpeed: 600
+})
