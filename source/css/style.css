@@ -439,7 +439,7 @@ textarea {
 .main-header {
   width: 100%;
   position: fixed;
-  height: 134px;
+  height: 100px;
   top: 0px;
   left: 0px;
   z-index: 100;
