@@ -59,22 +59,41 @@
 }
 
 #office .owl-nav button.owl-prev {
-    background: url("../img/arrow-active.png") no-repeat;
+    background: url("../img/left-arrow.svg") no-repeat;
     background-size: 100% 100%;
-    width: 40px;
-    height: 25px;
+    transform: translate(180deg);
+    width: 60px;
+    height: 35px;
     border: none;
     outline: none;
+    cursor: pointer;
+}
+
+#office .owl-nav button.owl-prev:hover {
+    background: url("../img/left-arrow-active.svg") no-repeat;
+    background-size: 100% 100%;
+    width: 60px;
+    height: 35px;
+    transform: rotate(0deg);
 }
 
 #office .owl-nav button.owl-next {
-    background: url("../img/arrow-active.png") no-repeat;
+    background: url("../img/left-arrow.svg") no-repeat;
     background-size: 100% 100%;
     transform: rotate(180deg);
-    width: 40px;
-    height: 25px;
+    width: 60px;
+    height: 35px;
     border: none;
     outline: none;
+    cursor: pointer;
+}
+
+#office .owl-nav button.owl-next:hover {
+    background: url("../img/left-arrow-active.svg") no-repeat;
+    background-size: 100% 100%;
+    transform: rotate(180deg);
+    width: 60px;
+    height: 35px;
 }
 
 .office-popup__close {
