@@ -85,8 +85,10 @@ let slickDots = document.querySelector('.slick-dots')
 let lines = slickDots.querySelectorAll('li')
 let slickSlide = document.querySelectorAll('.slick-slide')
 let sendForm = document.querySelector('.sixth-screen-vacancy')
-let coords = Math.floor(sendForm.getBoundingClientRect().top)
+
 let slickTrack = document.querySelector('.slick-track')
+if(sendForm) {
+	let coords = Math.floor(sendForm.getBoundingClientRect().top)
 if(sendResumeButton) {
 	sendResumeButton.addEventListener('click', () => {
 		currentVacancies.classList.remove('show')
@@ -101,6 +103,8 @@ if(sendResumeButton) {
 
 	})
 }
+}
+
 
 //уведомление о том, что файл прикреплен
 let fileInput = document.querySelector('.input-wrapper__input--file')
