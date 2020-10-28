@@ -5,7 +5,7 @@ $('.screen-slider').owlCarousel({
     nav:true,
     items: 1,
     dots: false,
-    margin: 5
+	margin: 5
 })
 
 const $slider = $("#pagepiling");
@@ -19,6 +19,8 @@ $slider
         arrows: false,
 		vertical: true,
 		infinite: false,
+		speed: 1000,
+		draggable: true
 	})
 function mouseWheel($slider) {
 	$(window).on('wheel', { $slider: $slider }, mouseWheelHandler)
@@ -83,7 +85,7 @@ let slickDots = document.querySelector('.slick-dots')
 let lines = slickDots.querySelectorAll('li')
 let slickSlide = document.querySelectorAll('.slick-slide')
 let sendForm = document.querySelector('.sixth-screen-vacancy')
-// let coords = Math.floor(sendForm.getBoundingClientRect().top)
+let coords = Math.floor(sendForm.getBoundingClientRect().top)
 let slickTrack = document.querySelector('.slick-track')
 if(sendResumeButton) {
 	sendResumeButton.addEventListener('click', () => {
@@ -115,24 +117,28 @@ let galleryPopup = document.querySelector('.gallery-popup')
 let header = document.querySelector('.main-header__wrapper')
 let popupClose = document.querySelector('.gallery-popup__close')
 
-photoButton.addEventListener('click', () => {
-	galleryPopup.style.display = 'block'
-	header.style.opacity = '0.2'
-	slickDots.style.opacity = '0.2'
-})
+if(photoButton) {
+	photoButton.addEventListener('click', () => {
+		galleryPopup.style.display = 'block'
+		header.style.opacity = '0.2'
+		slickDots.style.opacity = '0.2'
+	})
+}
 
-popupClose.addEventListener('click', () => {
-	galleryPopup.style.display = 'none'
-	header.style.opacity = '1'
-	slickDots.style.opacity = '1'
-})
+if(popupClose) {
+	popupClose.addEventListener('click', () => {
+		galleryPopup.style.display = 'none'
+		header.style.opacity = '1'
+		slickDots.style.opacity = '1'
+	})
+}
 
 $('.gallery').owlCarousel({
     loop:false,
     nav:true,
     items: 1,
     dots: false,
-    smartSpeed: 600
+    smartSpeed: 1500
 })
 
 //клик по кнопке "посмотреть офис"
@@ -140,24 +146,28 @@ let vacancyOffice = document.querySelector('.vacancy-office')
 let officePopup = document.querySelector('.office-popup')
 let officeClose = document.querySelector('.office-popup__close')
 
-vacancyOffice.addEventListener('click', () => {
-	officePopup.style.display = 'block'
-	header.style.opacity = '0.2'
-	slickDots.style.opacity = '0.2'
-})
+if(vacancyOffice){
+	vacancyOffice.addEventListener('click', () => {
+		officePopup.style.display = 'block'
+		header.style.opacity = '0.2'
+		slickDots.style.opacity = '0.2'
+	})
+}
 
-officeClose.addEventListener('click', () => {
-	officePopup.style.display = 'none'
-	header.style.opacity = '1'
-	slickDots.style.opacity = '1'
-})
+if(officeClose) {
+	officeClose.addEventListener('click', () => {
+		officePopup.style.display = 'none'
+		header.style.opacity = '1'
+		slickDots.style.opacity = '1'
+	})
+}
 
 $('.office').owlCarousel({
     loop:false,
     nav:true,
     items: 1,
     dots: false,
-    smartSpeed: 600
+    smartSpeed: 1500
 })
 
 //клик по кнопке "показать видео"
@@ -165,14 +175,18 @@ let buttonVideo = document.querySelector('.button-wrapper__video')
 let popupVideo = document.querySelector('.popup-video')
 let videoClose = document.querySelector('.popup-video__close')
 
-buttonVideo.addEventListener('click', () => {
-	popupVideo.classList.add('active')
-	header.style.opacity = '0.2'
-	slickDots.style.opacity = '0.2'
-})
+if(buttonVideo) {
+	buttonVideo.addEventListener('click', () => {
+		popupVideo.classList.add('active')
+		header.style.opacity = '0.2'
+		slickDots.style.opacity = '0.2'
+	})
+}
 
-videoClose.addEventListener('click', () => {
-	popupVideo.classList.remove('active')
-	header.style.opacity = '1'
-	slickDots.style.opacity = '1'
-})
+if(videoClose) {
+	videoClose.addEventListener('click', () => {
+		popupVideo.classList.remove('active')
+		header.style.opacity = '1'
+		slickDots.style.opacity = '1'
+	})
+}
