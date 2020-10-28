@@ -141,7 +141,6 @@ let officePopup = document.querySelector('.office-popup')
 let officeClose = document.querySelector('.office-popup__close')
 
 vacancyOffice.addEventListener('click', () => {
-	console.log("клик по кнопке смотреть офис")
 	officePopup.style.display = 'block'
 	header.style.opacity = '0.2'
 	slickDots.style.opacity = '0.2'
@@ -159,4 +158,21 @@ $('.office').owlCarousel({
     items: 1,
     dots: false,
     smartSpeed: 600
+})
+
+//клик по кнопке "показать видео"
+let buttonVideo = document.querySelector('.button-wrapper__video')
+let popupVideo = document.querySelector('.popup-video')
+let videoClose = document.querySelector('.popup-video__close')
+
+buttonVideo.addEventListener('click', () => {
+	popupVideo.classList.add('active')
+	header.style.opacity = '0.2'
+	slickDots.style.opacity = '0.2'
+})
+
+videoClose.addEventListener('click', () => {
+	popupVideo.classList.remove('active')
+	header.style.opacity = '1'
+	slickDots.style.opacity = '1'
 })
