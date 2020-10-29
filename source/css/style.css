@@ -650,6 +650,10 @@ textarea {
 .screen-slider__slide-text {
   padding: 51px 101px 10px 44px;
 }
+@media (min-width: 1024px) and (max-width: 1440px) {
+  padding: 20px;
+  font-size: 16px;
+}
 .owl-stage {
   display: -webkit-box;
   display: -ms-flexbox;
