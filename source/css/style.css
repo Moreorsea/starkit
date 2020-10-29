@@ -1417,6 +1417,7 @@ textarea {
   text-transform: uppercase;
   padding: 19px 58px;
   letter-spacing: 1.2px;
+  cursor: pointer;
 }
 .input-wrapper__input.input-wrapper__input--file {
   position: absolute;
@@ -1681,6 +1682,7 @@ textarea {
   text-decoration: none;
   letter-spacing: 1px;
   margin: 14.2% 0 4% 9.2%;
+  cursor: pointer;
 }
 @media (min-width: 1024px) and (max-width: 1599px) {
   .vacancy-response--yellow {
