@@ -681,7 +681,7 @@ textarea {
   background-size: 100% 100%;
   color: transparent;
   position: absolute;
-  bottom: 6%;
+  bottom: 10%;
   left: 6%;
   cursor: pointer;
 }
@@ -690,7 +690,7 @@ textarea {
   background-size: 100% 100%;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  bottom: 6%;
+  bottom: 10%;
   left: 6%;
 }
 .screen-slider .owl-next {
@@ -704,7 +704,7 @@ textarea {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   position: absolute;
-  bottom: 6%;
+  bottom: 10%;
   left: 14.7%;
   cursor: pointer;
 }
@@ -713,7 +713,7 @@ textarea {
   background-size: 100% 100%;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  bottom: 6%;
+  bottom: 10%;
   left: 14.7%;
 }
 .screen-slider .owl-prev.disabled {
@@ -722,7 +722,7 @@ textarea {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   position: absolute;
-  bottom: 6%;
+  bottom: 10%;
   left: 6%;
 }
 .screen-slider .owl-next.disabled {
@@ -731,7 +731,7 @@ textarea {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   left: 14.7%;
-  bottom: 6%;
+  bottom: 10%;
 }
 .owl-item:first-child .screen-slider__slide {
   background: url("../img/first-small-screen.png") no-repeat;
@@ -866,7 +866,7 @@ textarea {
   margin: 68px auto 0;
 }
 .about-vacancy {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   font-family: "Roboto Regular";
   width: 429px;
