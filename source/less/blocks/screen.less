@@ -64,6 +64,14 @@
 }
 
 .eigth-screen {
+    background: url('../img/six-screen.png') no-repeat;
+    width: 100vw;
+    height: 100vh;
+    // background-size: 100% 100%;
+    background-size: cover;
+}
+
+.ninth-screen {
     background: url('../img/seven-screen.png') no-repeat;
     width: 100vw;
     height: 100vh;
@@ -170,55 +178,61 @@
 .screen-slider .owl-prev {
     border: none;
     outline: none;
-    width: 40px;
-    height: 30px;
-    background: url("../img/arrow-active.png") no-repeat;
+    width: 60px;
+    height: 35px;
+    background: url("../img/left-arrow.svg") no-repeat;
+    background-size: 100% 100%;
     color: transparent;
     position: absolute;
-    bottom: 7%;
+    bottom: 11%;
     left: 9%;
 }
 
 .screen-slider .owl-prev:hover {
-    background: url("../img/hover-arrow.png") no-repeat;
-    transform: rotate(180deg);
+    background: url("../img/left-arrow-active.svg") no-repeat;
+    background-size: 100% 100%;
+    transform: rotate(0deg);
     bottom: 11%;
-    left: 7.2%;
+    left: 9%;
 }
 
 .screen-slider .owl-next {
     border: none;
     outline: none;
-    width: 40px;
-    height: 30px;
-    background: url("../img/arrow-active.png") no-repeat;
+    width: 60px;
+    height: 35px;
+    background: url("../img/left-arrow.svg") no-repeat;
+    background-size: 100% 100%;
     color: transparent;
     transform: rotate(180deg);
     position: absolute;
     bottom: 11%;
-    left: 17%;
+    left: 25%;
 }
 
 .screen-slider .owl-next:hover {
-    background: url("../img/hover-arrow.png") no-repeat;
-    transform: rotate(0deg);
-    bottom: 7.2%;
-    left: 19%;
+    background: url("../img/left-arrow-active.svg") no-repeat;
+    background-size: 100% 100%;
+    transform: rotate(180deg);
+    bottom: 11%;
+    left: 25%;
 }
 
 .screen-slider .owl-prev.disabled {
-    background: url("../img/arrow-disabled.png") no-repeat;
-    transform: rotate(180deg);
+    background: url("../img/left-arrow-inactive.svg") no-repeat;
+    background-size: 100% 100%;
+    transform: rotate(0deg);
     position: absolute;
     bottom: 11%;
-    left: 7%;
+    left: 9%;
 }
 
 .screen-slider .owl-next.disabled {
-    background: url("../img/arrow-disabled.png") no-repeat;
-    transform: rotate(0deg);
-    left: 19%;
-    bottom: 7.2%;
+    background: url("../img/left-arrow-inactive.svg") no-repeat;
+    background-size: 100% 100%;
+    transform: rotate(180deg);
+    left: 25%;
+    bottom: 11%;
 }
 
 //стили для слайдера внутри слайда
