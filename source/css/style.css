@@ -495,7 +495,7 @@ textarea {
   right: -22px;
   font-size: 11px;
   line-height: 11px;
-  padding: 3px 4px;
+  padding: 5px 5px 4px 5px;
 }
 .main-copyright {
   color: #22474c;
@@ -672,16 +672,17 @@ textarea {
   background-size: 100% 100%;
   color: transparent;
   position: absolute;
-  bottom: 11%;
-  left: 9%;
+  bottom: 6%;
+  left: 6%;
+  cursor: pointer;
 }
 .screen-slider .owl-prev:hover {
   background: url("../img/left-arrow-active.svg") no-repeat;
   background-size: 100% 100%;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  bottom: 11%;
-  left: 9%;
+  bottom: 6%;
+  left: 6%;
 }
 .screen-slider .owl-next {
   border: none;
@@ -694,16 +695,17 @@ textarea {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   position: absolute;
-  bottom: 11%;
-  left: 25%;
+  bottom: 6%;
+  left: 14.7%;
+  cursor: pointer;
 }
 .screen-slider .owl-next:hover {
   background: url("../img/left-arrow-active.svg") no-repeat;
   background-size: 100% 100%;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  bottom: 11%;
-  left: 25%;
+  bottom: 6%;
+  left: 14.7%;
 }
 .screen-slider .owl-prev.disabled {
   background: url("../img/left-arrow-inactive.svg") no-repeat;
@@ -711,16 +713,16 @@ textarea {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   position: absolute;
-  bottom: 11%;
-  left: 9%;
+  bottom: 6%;
+  left: 6%;
 }
 .screen-slider .owl-next.disabled {
   background: url("../img/left-arrow-inactive.svg") no-repeat;
   background-size: 100% 100%;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  left: 25%;
-  bottom: 11%;
+  left: 14.7%;
+  bottom: 6%;
 }
 .owl-item:first-child .screen-slider__slide {
   background: url("../img/first-small-screen.png") no-repeat;
@@ -1004,7 +1006,7 @@ textarea {
   line-height: 27px;
   font-family: "Muller Bold";
   text-transform: uppercase;
-  padding: 20px 37px 14px;
+  padding: 18px 37px 16px;
   text-align: center;
   text-decoration: none;
   letter-spacing: 1px;
@@ -1027,7 +1029,7 @@ textarea {
   line-height: 27px;
   font-family: "Muller Bold";
   text-transform: uppercase;
-  padding: 20px 37px 14px;
+  padding: 18px 37px 16px;
   text-align: center;
   text-decoration: none;
   letter-spacing: 1px;
@@ -1239,6 +1241,10 @@ textarea {
   cursor: pointer;
   opacity: 1;
   z-index: 200;
+}
+.view-office {
+  width: 76%;
+  margin: 10.7% auto 0;
 }
 .popup-video {
   display: none;
