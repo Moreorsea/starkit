@@ -570,7 +570,7 @@ textarea {
   background-size: cover;
 }
 .eigth-screen {
-  background: url('../img/six-screen.png') no-repeat;
+  background: url('../img/eight-screen.png') no-repeat;
   width: 100vw;
   height: 100vh;
   background-size: cover;
@@ -899,13 +899,13 @@ textarea {
 }
 .vacancy-office {
   display: inline-block;
-  background-color: #ffc54a;
+  background-color: #ffffff;
   color: #080808;
   font-size: 14px;
   line-height: 27px;
   font-family: "Muller Bold";
   text-transform: uppercase;
-  padding: 20px 38px 14px;
+  padding: 20px 52px 14px;
   text-align: center;
   text-decoration: none;
   letter-spacing: 1px;
@@ -1255,7 +1255,17 @@ textarea {
 }
 .view-office {
   width: 76%;
-  margin: 10.7% auto 0;
+  margin: 5.1% auto 0;
+}
+.about-office {
+  width: 76%;
+  margin: 4% auto 0;
+}
+.about-office__description {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto Regular";
+  width: 429px;
 }
 .popup-video {
   display: none;
