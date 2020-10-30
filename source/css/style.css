@@ -1071,7 +1071,7 @@ textarea {
           transform: translate(-50%, -50%);
 }
 #gallery .owl-stage-outer {
-  width: 80vw;
+  width: auto;
   margin: 0 auto;
 }
 #gallery .owl-stage {
@@ -1080,7 +1080,7 @@ textarea {
   overflow: hidden;
 }
 .gallery-item {
-  width: 80vw !important;
+  width: auto;
   height: 80vh !important;
 }
 #gallery .owl-stage img {

@@ -13,6 +13,7 @@ let currentVacancies = document.querySelector('.current-vacancies')
 $slider
 	.on('init', () => {
 		mouseWheel($slider)
+		mouseScroll($slider)
 	})
 	.slick({
         dots: true,
@@ -26,10 +27,15 @@ function mouseWheel($slider) {
 	$(window).on('wheel', { $slider: $slider }, mouseWheelHandler)
 }
 
+function mouseScroll($slider) {
+	$(window).on('scroll', { $slider: $slider }, mouseWheelHandler)
+}
+
 function mouseWheelHandler(event) {
 	event.preventDefault()
 	const $slider = event.data.$slider
 	const delta = event.originalEvent.deltaY
+	console.log(delta)
 	if(delta < 0) {
 		$slider.slick('slickPrev')
 	}
