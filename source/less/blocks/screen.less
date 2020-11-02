@@ -156,6 +156,13 @@
     position: relative;
 }
 
+@media(min-width: 1024px) and (max-width: 1599px) {
+    .screen-slider {
+        width: 300px;
+        height: 200px;
+    }
+}
+
 .third-screen__wrapper {
     width: 81%;
     margin: 0 auto;
@@ -166,14 +173,22 @@
    padding: 51px 101px 10px 44px;
 }
 
-@media(min-width: 1024px) and (max-width: 1440px) {
-    padding: 20px;
-    font-size: 16px;
+@media(min-width: 1024px) and (max-width: 1599px) {
+    .screen-slider__slide-text {
+        padding: 20px;
+        font-size: 14px;
+    }
 }
 
 .owl-stage {
     display: flex;
     height: 250px;
+}
+
+@media(min-width: 1024px) and (max-width: 1599px) {
+    .owl-stage {
+        height: 200px;
+    }
 }
 
 .owl-stage-outer {
@@ -194,12 +209,26 @@
     cursor: pointer;
 }
 
+@media(min-width: 1024px) and (max-width: 1599px) {
+    .screen-slider .owl-prev {
+        width: 50px;
+        height: 25px;
+    }
+}
+
 .screen-slider .owl-prev:hover {
     background: url("../img/left-arrow-active.svg") no-repeat;
     background-size: 100% 100%;
     transform: rotate(0deg);
     bottom: 10%;
     left: 6%;
+}
+
+@media(min-width: 1024px) and (max-width: 1599px) {
+    .screen-slider .owl-prev:hover {
+        width: 50px;
+        height: 25px;
+    }
 }
 
 .screen-slider .owl-next {
@@ -217,12 +246,28 @@
     cursor: pointer;
 }
 
+@media(min-width: 1024px) and (max-width: 1599px) {
+    .screen-slider .owl-next {
+        left: 18%;
+        width: 50px;
+        height: 25px;
+    }
+}
+
 .screen-slider .owl-next:hover {
     background: url("../img/left-arrow-active.svg") no-repeat;
     background-size: 100% 100%;
     transform: rotate(180deg);
     bottom: 10%;
     left: 14.7%;
+}
+
+@media(min-width: 1024px) and (max-width: 1599px) {
+    .screen-slider .owl-next:hover {
+        left: 18%;
+        width: 50px;
+        height: 25px;
+    }
 }
 
 .screen-slider .owl-prev.disabled {
@@ -234,12 +279,27 @@
     left: 6%;
 }
 
+@media(min-width: 1024px) and (max-width: 1599px) {
+    .screen-slider .owl-prev:disabled {
+        width: 50px;
+        height: 25px;
+    }
+}
+
 .screen-slider .owl-next.disabled {
     background: url("../img/left-arrow-inactive.svg") no-repeat;
     background-size: 100% 100%;
     transform: rotate(180deg);
     left: 14.7%;
     bottom: 10%;
+}
+
+@media(min-width: 1024px) and (max-width: 1599px) {
+    .screen-slider .owl-next.disabled {
+        left: 18%;
+        width: 50px;
+        height: 25px;
+    }
 }
 
 //стили для слайдера внутри слайда

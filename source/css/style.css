@@ -652,6 +652,12 @@ textarea {
   line-height: 27px;
   position: relative;
 }
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .screen-slider {
+    width: 300px;
+    height: 200px;
+  }
+}
 .third-screen__wrapper {
   width: 81%;
   margin: 0 auto;
@@ -659,15 +665,22 @@ textarea {
 .screen-slider__slide-text {
   padding: 51px 101px 10px 44px;
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
-  padding: 20px;
-  font-size: 16px;
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .screen-slider__slide-text {
+    padding: 20px;
+    font-size: 14px;
+  }
 }
 .owl-stage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 250px;
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .owl-stage {
+    height: 200px;
+  }
 }
 .owl-stage-outer {
   overflow: hidden;
@@ -685,6 +698,12 @@ textarea {
   left: 6%;
   cursor: pointer;
 }
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .screen-slider .owl-prev {
+    width: 50px;
+    height: 25px;
+  }
+}
 .screen-slider .owl-prev:hover {
   background: url("../img/left-arrow-active.svg") no-repeat;
   background-size: 100% 100%;
@@ -692,6 +711,12 @@ textarea {
           transform: rotate(0deg);
   bottom: 10%;
   left: 6%;
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .screen-slider .owl-prev:hover {
+    width: 50px;
+    height: 25px;
+  }
 }
 .screen-slider .owl-next {
   border: none;
@@ -708,6 +733,13 @@ textarea {
   left: 14.7%;
   cursor: pointer;
 }
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .screen-slider .owl-next {
+    left: 18%;
+    width: 50px;
+    height: 25px;
+  }
+}
 .screen-slider .owl-next:hover {
   background: url("../img/left-arrow-active.svg") no-repeat;
   background-size: 100% 100%;
@@ -715,6 +747,13 @@ textarea {
           transform: rotate(180deg);
   bottom: 10%;
   left: 14.7%;
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .screen-slider .owl-next:hover {
+    left: 18%;
+    width: 50px;
+    height: 25px;
+  }
 }
 .screen-slider .owl-prev.disabled {
   background: url("../img/left-arrow-inactive.svg") no-repeat;
@@ -725,6 +764,12 @@ textarea {
   bottom: 10%;
   left: 6%;
 }
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .screen-slider .owl-prev:disabled {
+    width: 50px;
+    height: 25px;
+  }
+}
 .screen-slider .owl-next.disabled {
   background: url("../img/left-arrow-inactive.svg") no-repeat;
   background-size: 100% 100%;
@@ -732,6 +777,13 @@ textarea {
           transform: rotate(180deg);
   left: 14.7%;
   bottom: 10%;
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .screen-slider .owl-next.disabled {
+    left: 18%;
+    width: 50px;
+    height: 25px;
+  }
 }
 .owl-item:first-child .screen-slider__slide {
   background: url("../img/first-small-screen.png") no-repeat;
@@ -1356,7 +1408,7 @@ textarea {
   margin-top: 0px;
   top: 87%;
   left: 9.5%;
-  padding: 17px 39px;
+  padding: 18px 39px 16px;
 }
 .vacancy-text {
   font-family: "Roboto Regular";
@@ -1587,7 +1639,7 @@ textarea {
   font-family: "Muller Bold";
   text-transform: uppercase;
   display: block;
-  padding: 18px 24px;
+  padding: 18px 24px 16px;
   max-width: 190px;
   text-align: center;
   text-decoration: none;
@@ -1699,7 +1751,7 @@ textarea {
   font-family: "Muller Bold";
   text-transform: uppercase;
   display: block;
-  padding: 18px 24px;
+  padding: 18px 24px 16px;
   max-width: 273px;
   text-align: center;
   text-decoration: none;

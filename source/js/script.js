@@ -13,7 +13,7 @@ let currentVacancies = document.querySelector('.current-vacancies')
 $slider
 	.on('init', () => {
 		mouseWheel($slider)
-		mouseScroll($slider)
+		// mouseScroll($slider)
 	})
 	.slick({
         dots: true,
@@ -27,21 +27,44 @@ function mouseWheel($slider) {
 	$(window).on('wheel', { $slider: $slider }, mouseWheelHandler)
 }
 
-function mouseScroll($slider) {
-	$(window).on('scroll', { $slider: $slider }, mouseWheelHandler)
-}
+// function mouseScroll($slider) {
+// 	$(window).on('scroll', { $slider: $slider }, mouseWheelHandler)
+// }
 
 function mouseWheelHandler(event) {
 	event.preventDefault()
 	const $slider = event.data.$slider
 	const delta = event.originalEvent.deltaY
-	console.log(delta)
 	if(delta < 0) {
 		$slider.slick('slickPrev')
 	}
 	else {
 		$slider.slick('slickNext')
 	}
+}
+
+// реализация работа слайдера по стрелкам вверх и вниз
+document.addEventListener('keydown', (e) => {
+	if(e.keyCode  == 38) {
+		$($slider).slick('slickPrev');
+	}
+
+	if(e.keyCode  == 40) {
+		$($slider).slick('slickNext');
+	}
+})
+
+// клик по пункту меню "контакты"
+if(!window.location.pathname.includes('vacancy')) {
+	let menuItem = document.querySelector('.main-header-menu__item-contacts')
+	menuItem.addEventListener('click', () => {
+		$slider.slick('slickGoTo', 8, true)
+	})
+} 
+
+if(window.location.hash == '#contacts') {
+	$slider.slick('slickGoTo', 8, true)
+	window.location.hash = ''
 }
 
 //обработка клика по кнопке "смотреть вакансии"
@@ -98,14 +121,14 @@ if(sendForm) {
 if(sendResumeButton) {
 	sendResumeButton.addEventListener('click', () => {
 		currentVacancies.classList.remove('show')
-
-		slickTrack.style.transform = `translate3d(0px, -${coords}px, 0px)`
-		for(let i = 0; i < lines.length; i++) {
-			lines[i].classList.remove('slick-active')
-			if(i == 5) {
-				lines[i].classList.add('slick-active')
-			}
-		}
+		$slider.slick('slickGoTo', 5, true)
+		// slickTrack.style.transform = `translate3d(0px, -${coords}px, 0px)`
+		// for(let i = 0; i < lines.length; i++) {
+		// 	lines[i].classList.remove('slick-active')
+		// 	if(i == 5) {
+		// 		lines[i].classList.add('slick-active')
+		// 	}
+		// }
 
 	})
 }
@@ -200,3 +223,4 @@ if(videoClose) {
 		slickDots.style.opacity = '1'
 	})
 }
+
