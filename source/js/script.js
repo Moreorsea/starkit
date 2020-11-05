@@ -224,3 +224,15 @@ if(videoClose) {
 	})
 }
 
+
+//клик на кнопку "откликнуться на вакансию"
+let responseVacancy = document.querySelectorAll('.vacancy-response--yellow')
+if(responseVacancy) {
+	console.log(responseVacancy)
+	responseVacancy.forEach((item) => {
+		item.addEventListener('click', () => {
+			currentVacancies.classList.remove('show')
+			$slider.slick('slickGoTo', 5, true)
+		})
+	})
+}
